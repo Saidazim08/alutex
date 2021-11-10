@@ -1,0 +1,664 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.section1 {
+    background: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+}
+
+#sidebar {
+    
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: auto;
+    min-width: 210px;
+    padding: 30px 25px;
+    background-color: #000;
+    opacity: 0.9;
+    height: 100%;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+.section1 ul {
+    margin-top: 65px;
+    padding-left: 0;
+}
+
+.section1 nav li {
+    line-height: 46px;
+    list-style: none;
+}
+
+.section1 .links a {
+    text-decoration: none;
+    color: #919191;
+    transition: 0.3s;
+}
+
+.section1 .links a:hover {
+    color: #fff;
+}
+
+.section1 nav button {
+    margin-top: 30px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    background: #264796;
+}
+
+.section1 nav button:hover {
+    background: #1c387a;
+}
+
+.lang {
+    margin-top: 49px;
+}
+
+.lang a {
+    padding: 10px;
+    color: white;
+    background: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.lang a:hover {
+    background: white;
+    color: black !important;
+}
+
+.section1 .title {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 65px;
+    max-width: 830px;
+}
+
+.section1 .title h2 {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 24px;
+}
+
+.section1 .col-9 {
+    text-shadow: 0 0 10px #fff;
+    margin-left: 210px;
+    width: 71%;
+    margin-top: 140px;
+}
+
+.section1 .title p {
+    max-width: 500px;
+    margin-bottom: 56px;
+}
+
+.section1 .title button {
+    border: 1px solid gray;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.445);
+    width: 180px;
+    height: 50px;
+}
+
+.section1 .title button a {
+    transition: 0.3s;
+    color: black;
+    text-decoration: none;
+}
+
+.section1 .title button:hover > a {
+    color: white !important;
+}
+
+.section1 .title button:hover {
+    background-color: #264796;
+}
+
+.menu {
+    font-size: 30px;
+    visibility: hidden;
+    position: absolute;
+    top: 18px;
+    right: 30px;
+}
+
+@media (max-width: 768px) {
+    .section1 {
+        background-size: auto;
+    }
+
+    .section1 .col-9 {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    #sidebar {
+        left: -210px;
+    }
+    .menu {
+        visibility: visible;
+    }
+    .section1 .title h2 {
+        font-size: 30px;
+    }
+}
+
+/* section2 */
+
+.cursor {
+    color: black !important;
+    text-decoration: none;
+}
+
+.section-2 .title {
+    margin-top: 100px;
+}
+
+.section-2 .title h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.section-2 .title p {
+    font-size: 14px;
+}
+
+ .bg-col {
+    position: relative;
+}
+
+.bg-col img {
+    width: 100%;
+    height: auto;
+}
+
+ .botm {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    margin-bottom: 0;
+    padding: 40px;
+}
+
+ .layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+ .layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+ .col-12:hover > .layout {
+    opacity: 0.8;
+}
+
+ .col-12:hover > .botm {
+    transition: 1s;
+    opacity: 0;
+}
+
+ .layout .layout-text {
+    padding-left: 40px;
+    max-width: 500px;
+}
+
+ .layout .layout-text h5 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+ .layout .layout-text p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.layout .layout-text a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* section-3 */
+
+.section-3 .card img {
+    margin: 50px auto;
+    width: 75px;
+    height: 75px;
+}
+
+.section-3 .card h5 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.section-3 .card p {
+    font-size: 14px;
+}
+
+.section-3 .card {
+    height: 100%;
+    border: none;
+    box-shadow: 0px 0px 54px -27px rgba(30, 45, 56, 0.26);
+}
+
+/* section-4 */
+
+.nav-link {
+    font-size: 15px;
+    color: black;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+}
+
+.nav-link:hover {
+    border: none;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    transition: 0;
+    border: none;
+    border-bottom: 2px solid #264796 !important;
+}
+
+.section-4 .tab-pane img {
+    width: 100%;
+    height: auto;
+}
+
+.section-4 .title h2 {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 44px;
+}
+
+.section-4 .title p {
+    margin-bottom: 26px;
+}
+
+.section-4 .title-text {
+    max-width: 340px;
+}
+
+.section-4 .title button {
+    transition: 0.3s;
+    border: 1px solid grey;
+    margin-top: 40px;
+    background-color: transparent;
+    width: 180px;
+    height: 50px;
+}
+
+.section-4 .title button a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.section-4 .title button:hover > a {
+    color: white;
+}
+
+.section-4 .title button:hover {
+    background-color: #264796;
+}
+
+@media (max-width: 768px) {
+    .section-4 .title-text {
+        max-width: 100%;
+    }
+
+    .section-4 .title h2 {
+        font-weight: 600;
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+
+    .section-4 .title p {
+        font-size: 15px;
+    }
+}
+
+/* section-5 */
+
+.section-5,
+.section-4,
+.section-3,
+.section-2 {
+    margin-top: 120px;
+}
+
+.section-5 .box-ads {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 140px;
+    background-color: #f2f4f5;
+}
+
+/* map */
+
+.map-section {
+    margin-top: 125px;
+}
+
+.map-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    box-shadow: 0px 0px 54px -27px rgb(30 45 56 / 26%);
+    padding: 35px;
+    background-color: #fff;
+    left: 125px;
+    position: absolute;
+}
+
+.contacts p {
+    font-size: 15px;
+}
+
+.map-about {
+    margin-left: 450px;
+    text-align: start;
+    max-width: 430px;
+}
+
+.map-about h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.map-about p {
+    font-size: 13px;
+}
+
+@media (max-width: 991px) {
+    .map-title {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .contacts {
+        position: static;
+    }
+    .map-about {
+        margin-left: 0;
+    }
+}
+
+/* footer  */
+
+footer {
+    background-color: #222222;
+}
+
+.footer-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+footer input {
+    color: white;
+    padding-left: 20px;
+    border: 1px solid #ffffff3a;
+    background-color: #222222;
+    width: 95%;
+    height: 55px;
+}
+
+footer input:focus {
+    outline: none;
+}
+
+footer form button {
+    border: none;
+    font-weight: 600;
+    width: 95%;
+    height: 55px;
+    transition: 0.3s;
+}
+
+footer form button:hover {
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+footer form:after {
+    content: "";
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid #ffffff3a;
+    display: block;
+}
+
+footer .end-btn {
+    border-left: 1px solid #ffffff3a;
+}
+
+.footer-btn {
+    color: #fff;
+    background-color: #264796;
+}
+
+.footer-btn:hover {
+    background-color: #1c387a;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #264796;
+}
+
+.footer-about::after {
+    content: "";
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid #ffffff3a;
+    display: block;
+}
+
+/* about */
+
+.about-page, .products-section{
+    margin-bottom: 120px;
+}
+
+.about-section {
+    margin-top: 98px;
+}
+
+ header li {
+    list-style: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+ header li a {
+    transition: 0.3s;
+    color: #949494;
+    text-decoration: none;
+}
+
+ header li a:hover {
+    color: #3a65ca !important;
+}
+
+ #sidebar ul {
+    margin-top: 65px;
+    padding-left: 0;
+}
+
+#sidebar nav li {
+    line-height: 46px;
+    list-style: none;
+}
+
+#sidebar .links a {
+    text-decoration: none;
+    color: #919191;
+    transition: 0.3s;
+}
+
+#sidebar .links a:hover {
+    color: #fff;
+}
+
+#sidebar nav button {
+    margin-top: 30px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    background: #264796;
+}
+
+#sidebar nav button:hover {
+    background: #1c387a;
+}
+
+ #sidebar.active {
+    left: 0;
+}
+
+.about-inner {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 100px;
+}
+
+.about-left {
+    background-color: white;
+    max-width: 635px;
+    max-height: 580px;
+    left: 150px;
+    top: 43px;
+    position: absolute;
+    padding: 74px 165px 90px 60px;
+}
+
+.about-title {
+    margin-bottom: 40px;
+}
+
+.about-title h1 {
+    color: #264796;
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+    .about-title h1 {
+        color: #264796;
+        font-weight: 800;
+        font-size: 38px;
+        margin-bottom: 0;
+    }
+
+    .about-title h3 {
+        font-size: 27px;
+    }
+
+    .about-title p {
+        font-size: 14px;
+    }
+
+    .about-left{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-page #sidebar {
+        left: -210px;
+    }
+
+    .about-page .menu {
+        visibility: visible;
+    }
+    .about-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-left {
+        max-height: 100%;
+        max-width: 100% !important;
+        padding-top: 50px;
+        position: static;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .about-left {
+        max-width: 500px;
+        left: -60;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .about-left {
+        left: 0;
+    }
+}
